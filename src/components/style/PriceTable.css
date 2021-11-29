@@ -1,0 +1,113 @@
+.price-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3em;
+}
+
+.price-table-column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.price-table-cell {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    min-height: 50px;
+    border-top: solid 1.5px white;
+}
+
+.transaction-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-cell, .transaction-cell {
+    color: #FFFFFF;
+}
+
+.transaction-cell {
+    font-size: 12px;
+}
+
+.head-cell, .transaction-percent {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.left-corner {
+    border-bottom-left-radius: 10px;
+}
+
+.column1 .price-table-cell {
+    background-color: #DCEEFF;
+} 
+
+.column1 .transaction-cell {
+    background-color: #8BC7FF;
+}
+
+.column1 .head-cell {
+    border-top-left-radius: 10px;
+    background-color: #1890FF;
+}
+
+.column2 .price-table-cell {
+    background-color: #CCE7FF;
+}
+
+.column2 .head-cell { 
+    background-color: #56AEFF;
+}
+
+
+.column2 .transaction-cell {
+    background-color: #ABD7FF;
+}
+
+.last-cell {
+    border-bottom-right-radius: 10px;
+}
+
+.column3 .price-table-cell {
+    background-color: #D5EBFF;
+}
+
+.column3 .head-cell { 
+    border-top-right-radius: 10px;
+    background-color: #74BCFF;
+}
+
+.column3 .transaction-cell {
+    background-color: #B9DDFF;
+}
+
+
+@media only screen and (max-width: 600px) { 
+    .price-table {
+        flex-direction: column;
+    }
+
+    .price-table-column {
+        width: 100%;
+    }
+
+    .column1 .head-cell {
+        border-top-right-radius: 10px;
+    }
+
+    .column3 .head-cell { 
+        border-top-right-radius: 0px;
+    }
+
+    .last-cell {
+        border-bottom-left-radius: 10px;
+    }
+
+}

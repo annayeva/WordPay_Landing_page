@@ -1,0 +1,130 @@
+.content-container {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero-text {
+    margin-left: -6em;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 60%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text p {
+    font-size: 20px;
+    width: 60%;
+}
+
+.hero-text h1 {
+    margin-bottom: 0.5em;
+    width: 88%;
+    margin-left: -1em;
+}
+
+.hero-image img {
+    width: 80%;
+    height: auto;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools-container h1 {
+    width: 60%;
+}
+
+.paywall-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.paywall-container img {
+    width: 70%;
+    height: auto;
+}
+
+.advance-pricing-container {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.advance-pricing-container img {
+    width: 50%;
+    height: auto;
+}
+
+.advance-pricing-container h3 {
+    width: 70%;
+    font-size: 30px;
+}
+
+.pricing-contaner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing-contaner h2 {
+    margin-top: 0;
+    width: 60%;
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image, .hero-text, .hero-text, .tools-container h1, .advance-pricing-container h3, .pricing-contaner h2 {
+        width: 100%;
+    }
+
+    .hero-image img, .paywall-container img, .advance-pricing-container img {
+        width: 100%;
+    }
+
+    h1 { font-size: 24px !important;}
+    h2 { font-size: 22px !important;}
+    h3 { font-size: 16px !important;}
+    p { font-size: 16px !important;}
+
+    .hero-text p, .hero-text h1, .hero-text  {
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .hero-text h1 {
+
+    }
+
+ }
