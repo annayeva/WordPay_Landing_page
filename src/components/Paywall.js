@@ -6,7 +6,7 @@ function Paywall() {
     return (
         <div className="paywall-container">
             <h2 className="header2">Paywall optimization</h2>
-            <img src={paywallImg} alt="Paywall optimisation features" />
+            <PaywallFeatures />
         </div>
     )
 }
